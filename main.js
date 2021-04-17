@@ -10,13 +10,14 @@ var domGen = (matrix) => {
 let domain ="";
 
     for (var i = 0; i < matrix.length; i++) {
-        
         var innerArray = matrix[i];
-
+        var randomWord1 = innerArray[Math.floor(Math.random() * innerArray.length)];
+        console.log('line 15', randomWord1);
         for (var j = 0; j < innerArray.length; j++) {
 
-            words = innerArray;
-
+            var  words = innerArray;
+            var randomword2 = words[Math.floor(Math.random() * words.length)];
+            console.log('line20', randomword2);
             for(var k = 0; k < words.length; k++){
                 console.log(words)
             }
